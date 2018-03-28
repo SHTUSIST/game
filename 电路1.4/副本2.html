@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="simcir.js"></script>
+    <link rel="stylesheet" type="text/css" href="simcir.css" />
+    <script type="text/javascript" src="simcir-basicset.js"></script>
+    <link rel="stylesheet" type="text/css" href="simcir-basicset.css" />
+    <script type="text/javascript" src="simcir-library.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="simcir">
+    
+
+{
+ "width":800,
+  "height":400,
+  "showToolbox":true,
+  "toolbox":[
+    {"type":"In"},
+    {"type":"Out"},
+    {"type":"Joint"},
+    {"type":"DC(直流电)"},
+    {"type":"LED"},
+    {"type":"PushOff"},
+    {"type":"PushOn"},
+    {"type":"Toggle(开关)"},
+    {"type":"BUF(缓冲器)"},
+    {"type":"NOT(非门)"},
+    {"type":"AND(与门)"},
+    {"type":"NAND(与非门)"},
+    {"type":"OR(或门)"},
+    {"type":"NOR(或非门)"}
+    
+  ],
+  "devices":[
+    {"type":"NAND(与非门)","id":"dev0","x":216,"y":112,"label":"NAND"},
+    {"type":"NAND(与非门)","id":"dev1","x":304,"y":112,"label":"NAND"},
+    {"type":"DC(直流电)","id":"dev2","x":32,"y":120,"label":"DC"},
+    {"type":"LED","id":"dev3","x":384,"y":112,"label":"LED"},
+    {"type":"DC(直流电)","id":"dev4","x":24,"y":296,"label":"DC"},
+    {"type":"AND(与门)","id":"dev5","x":216,"y":280,"label":"AND"},
+    {"type":"LED","id":"dev6","x":384,"y":280,"label":"LED"},
+    {"type":"Toggle(开关)","id":"dev7","x":128,"y":320,"label":"Toggle","state":{"on":false}},
+    {"type":"Toggle(开关)","id":"dev8","x":120,"y":168,"label":"Toggle","state":{"on":false}},
+    {"type":"Toggle(开关)","id":"dev9","x":128,"y":248,"label":"Toggle","state":{"on":false}},
+    {"type":"Toggle(开关)","id":"dev10","x":120,"y":56,"label":"Toggle","state":{"on":false}}
+  ],
+  "connectors":[
+    {"from":"dev0.in0","to":"dev10.out0"},
+    {"from":"dev0.in1","to":"dev8.out0"},
+    {"from":"dev1.in0","to":"dev0.out0"},
+    {"from":"dev1.in1","to":"dev0.out0"},
+    {"from":"dev3.in0","to":"dev1.out0"},
+    {"from":"dev5.in0","to":"dev9.out0"},
+    {"from":"dev5.in1","to":"dev7.out0"},
+    {"from":"dev6.in0","to":"dev5.out0"},
+    {"from":"dev7.in0","to":"dev4.out0"},
+    {"from":"dev8.in0","to":"dev2.out0"},
+    {"from":"dev9.in0","to":"dev4.out0"},
+    {"from":"dev10.in0","to":"dev2.out0"}
+  ]
+}
+
+
+
+
+
+
+
+
+
+    </div>
+    <p>上面的两个逻辑是否是等效的?</p>
+    <p>Tips:如果两个逻辑电路的真值表相等,则我们称这两个逻辑电路等效</p>
+  </body>
+
+
+  <div>
+  <div class="pagination">
+    <a href="副本1(SHTU).html">&laquo;</a>
+    <a href="副本1(SHTU).html" >1</a>
+    <a href="#"  class="active">2</a>
+    <a href="副本3(逻辑等效).html">3</a>
+    <a href="副本4-震荡电路.html">4</a>
+    
+    
+    <a href="副本3(逻辑等效).html">&raquo;</a>
+  </div>
+</div>
+<style>
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
+</html>

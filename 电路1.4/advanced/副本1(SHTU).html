@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="simcir.js"></script>
+    <link rel="stylesheet" type="text/css" href="simcir.css" />
+    <script type="text/javascript" src="simcir-basicset.js"></script>
+    <link rel="stylesheet" type="text/css" href="simcir-basicset.css" />
+    <script type="text/javascript" src="simcir-library.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="simcir">
+    
+    <!-- paste here your circuit data -->
+
+{
+  "width":800,
+  "height":400,
+  "showToolbox":true,
+  "toolbox":[
+    {"type":"In"},
+    {"type":"Out"},
+    {"type":"Joint"},
+    {"type":"DC"},
+    {"type":"LED"},
+    {"type":"PushOff"},
+    {"type":"PushOn"},
+    {"type":"Toggle"},
+    {"type":"BUF"},
+    {"type":"NOT"},
+    {"type":"AND"},
+    {"type":"NAND"},
+    {"type":"OR"},
+    {"type":"NOR"}
+  ],
+  "devices":[
+    {"type":"LED","id":"dev0","x":8,"y":48,"label":"LED","color":"#CC0000"},
+    {"type":"LED","id":"dev1","x":8,"y":80,"label":"LED","color":"#CC0000"},
+    {"type":"LED","id":"dev2","x":160,"y":48,"label":"LED"},
+    {"type":"LED","id":"dev3","x":160,"y":80,"label":"LED"},
+    {"type":"LED","id":"dev4","x":72,"y":112,"label":"LED","color":"#CC0000"},
+    {"type":"LED","id":"dev5","x":72,"y":144,"label":"LED","color":"#CC0000"},
+    {"type":"LED","id":"dev6","x":72,"y":176,"label":"LED","color":"#CC0000"},
+    {"type":"LED","id":"dev7","x":72,"y":208,"label":"LED","color":"#CC0000"},
+    {"type":"LED","id":"dev8","x":8,"y":208,"label":"LED","color":"#CC0000"},
+    {"type":"LED","id":"dev9","x":40,"y":208,"label":"LED","color":"#CC0000"},
+    {"type":"LED","id":"dev10","x":40,"y":48,"label":"LED","color":"#CC0000"},
+    {"type":"LED","id":"dev11","x":72,"y":48,"label":"LED","color":"#CC0000"},
+    {"type":"LED","id":"dev12","x":160,"y":112,"label":"LED"},
+    {"type":"LED","id":"dev13","x":160,"y":144,"label":"LED"},
+    {"type":"LED","id":"dev14","x":160,"y":176,"label":"LED"},
+    {"type":"LED","id":"dev15","x":160,"y":208,"label":"LED"},
+    {"type":"LED","id":"dev16","x":192,"y":112,"label":"LED"},
+    {"type":"LED","id":"dev17","x":224,"y":112,"label":"LED"},
+    {"type":"LED","id":"dev18","x":256,"y":48,"label":"LED"},
+    {"type":"LED","id":"dev19","x":256,"y":80,"label":"LED"},
+    {"type":"LED","id":"dev20","x":256,"y":112,"label":"LED"},
+    {"type":"LED","id":"dev21","x":256,"y":144,"label":"LED"},
+    {"type":"LED","id":"dev22","x":256,"y":176,"label":"LED"},
+    {"type":"LED","id":"dev23","x":256,"y":208,"label":"LED"},
+    {"type":"LED","id":"dev24","x":336,"y":48,"label":"LED","color":"#00FF00"},
+    {"type":"LED","id":"dev25","x":368,"y":48,"label":"LED","color":"#00FF00"},
+    {"type":"LED","id":"dev26","x":400,"y":48,"label":"LED","color":"#00FF00"},
+    {"type":"LED","id":"dev27","x":432,"y":48,"label":"LED","color":"#00FF00"},
+    {"type":"LED","id":"dev28","x":384,"y":80,"label":"LED","color":"#00FF00"},
+    {"type":"LED","id":"dev29","x":384,"y":112,"label":"LED","color":"#00FF00"},
+    {"type":"LED","id":"dev30","x":384,"y":144,"label":"LED","color":"#00FF00"},
+    {"type":"LED","id":"dev31","x":384,"y":176,"label":"LED","color":"#00FF00"},
+    {"type":"LED","id":"dev32","x":384,"y":208,"label":"LED","color":"#00FF00"},
+    {"type":"LED","id":"dev33","x":504,"y":48,"label":"LED","color":"#FF9900"}, <!--  #FF6600 -->
+
+    {"type":"LED","id":"dev34","x":504,"y":80,"label":"LED","color":"#FF9900"},
+    {"type":"LED","id":"dev35","x":504,"y":112,"label":"LED","color":"#FF9900"},
+    {"type":"LED","id":"dev36","x":504,"y":144,"label":"LED","color":"#FF9900"},
+    {"type":"LED","id":"dev37","x":504,"y":176,"label":"LED","color":"#FF9900"},
+    {"type":"LED","id":"dev38","x":504,"y":208,"label":"LED","color":"#FF9900"},
+    {"type":"LED","id":"dev39","x":536,"y":208,"label":"LED","color":"#FF9900"},
+    {"type":"LED","id":"dev40","x":568,"y":208,"label":"LED","color":"#FF9900"},
+    {"type":"LED","id":"dev41","x":600,"y":208,"label":"LED","color":"#FF9900"},
+    {"type":"LED","id":"dev42","x":600,"y":176,"label":"LED","color":"#FF9900"},
+    {"type":"LED","id":"dev43","x":600,"y":144,"label":"LED","color":"#FF9900"},
+    {"type":"LED","id":"dev44","x":600,"y":112,"label":"LED","color":"#FF9900"},
+    {"type":"LED","id":"dev45","x":600,"y":80,"label":"LED","color":"#FF9900"},
+    {"type":"LED","id":"dev46","x":600,"y":48,"label":"LED","color":"#FF9900"},
+    {"type":"LED","id":"dev47","x":8,"y":112,"label":"LED","color":"#CC0000"},
+    {"type":"DC","id":"dev48","x":16,"y":352,"label":"DC","color":"#CC0000"},
+    {"type":"LED","id":"dev49","x":40,"y":112,"label":"LED","color":"#CC0000"},
+    {"type":"DC","id":"dev50","x":200,"y":344,"label":"DC"},
+    {"type":"Toggle","id":"dev51","x":200,"y":312,"label":"Toggle","state":{"on":false}},
+    {"type":"DC","id":"dev52","x":384,"y":344,"label":"DC"},
+    {"type":"Toggle","id":"dev53","x":384,"y":312,"label":"Toggle","state":{"on":false}},
+    {"type":"DC","id":"dev54","x":544,"y":344,"label":"DC"},
+    {"type":"Toggle","id":"dev55","x":16,"y":320,"label":"Toggle","state":{"on":false}},
+    {"type":"Toggle","id":"dev56","x":544,"y":312,"label":"Toggle","state":{"on":false}}
+  ],
+  "connectors":[
+    {"from":"dev0.in0","to":"dev55.out0"},
+    {"from":"dev1.in0","to":"dev55.out0"},
+    {"from":"dev2.in0","to":"dev51.out0"},
+    {"from":"dev3.in0","to":"dev51.out0"},
+    {"from":"dev4.in0","to":"dev55.out0"},
+    {"from":"dev5.in0","to":"dev55.out0"},
+    {"from":"dev6.in0","to":"dev55.out0"},
+    {"from":"dev7.in0","to":"dev55.out0"},
+    {"from":"dev8.in0","to":"dev55.out0"},
+    {"from":"dev9.in0","to":"dev55.out0"},
+    {"from":"dev10.in0","to":"dev55.out0"},
+    {"from":"dev11.in0","to":"dev55.out0"},
+    {"from":"dev12.in0","to":"dev51.out0"},
+    {"from":"dev13.in0","to":"dev51.out0"},
+    {"from":"dev14.in0","to":"dev51.out0"},
+    {"from":"dev15.in0","to":"dev51.out0"},
+    {"from":"dev16.in0","to":"dev51.out0"},
+    {"from":"dev17.in0","to":"dev51.out0"},
+    {"from":"dev18.in0","to":"dev51.out0"},
+    {"from":"dev19.in0","to":"dev51.out0"},
+    {"from":"dev20.in0","to":"dev51.out0"},
+    {"from":"dev21.in0","to":"dev51.out0"},
+    {"from":"dev22.in0","to":"dev51.out0"},
+    {"from":"dev23.in0","to":"dev51.out0"},
+    {"from":"dev24.in0","to":"dev53.out0"},
+    {"from":"dev25.in0","to":"dev53.out0"},
+    {"from":"dev26.in0","to":"dev53.out0"},
+    {"from":"dev27.in0","to":"dev53.out0"},
+    {"from":"dev28.in0","to":"dev53.out0"},
+    {"from":"dev29.in0","to":"dev53.out0"},
+    {"from":"dev30.in0","to":"dev53.out0"},
+    {"from":"dev31.in0","to":"dev53.out0"},
+    {"from":"dev32.in0","to":"dev53.out0"},
+    {"from":"dev33.in0","to":"dev56.out0"},
+    {"from":"dev34.in0","to":"dev56.out0"},
+    {"from":"dev35.in0","to":"dev56.out0"},
+    {"from":"dev36.in0","to":"dev56.out0"},
+    {"from":"dev37.in0","to":"dev56.out0"},
+    {"from":"dev38.in0","to":"dev56.out0"},
+    {"from":"dev39.in0","to":"dev56.out0"},
+    {"from":"dev40.in0","to":"dev56.out0"},
+    {"from":"dev41.in0","to":"dev56.out0"},
+    {"from":"dev42.in0","to":"dev56.out0"},
+    {"from":"dev43.in0","to":"dev56.out0"},
+    {"from":"dev44.in0","to":"dev56.out0"},
+    {"from":"dev45.in0","to":"dev56.out0"},
+    {"from":"dev46.in0","to":"dev56.out0"},
+    {"from":"dev47.in0","to":"dev55.out0"},
+    {"from":"dev49.in0","to":"dev55.out0"},
+    {"from":"dev51.in0","to":"dev50.out0"},
+    {"from":"dev53.in0","to":"dev52.out0"},
+    {"from":"dev55.in0","to":"dev48.out0"},
+    {"from":"dev56.in0","to":"dev54.out0"}
+  ]
+}
+
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <script type="text/javascript" src="simcir.js"></script>
+    <link rel="stylesheet" type="text/css" href="simcir.css" />
+    <script type="text/javascript" src="simcir-basicset.js"></script>
+    <link rel="stylesheet" type="text/css" href="simcir-basicset.css" />
+    <script type="text/javascript" src="simcir-library.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="simcir">
+    
+
+{
+ "width":800,
+  "height":400,
+  "showToolbox":true,
+  "toolbox":[
+    {"type":"In"},
+    {"type":"Out"},
+    {"type":"Joint"},
+    {"type":"DC(直流电)"},
+    {"type":"LED"},
+    {"type":"PushOff"},
+    {"type":"PushOn"},
+    {"type":"Toggle(开关)"},
+    {"type":"BUF(缓冲器)"},
+    {"type":"NOT(非门)"},
+    {"type":"AND(与门)"},
+    {"type":"NAND(与非门)"},
+    {"type":"OR(或门)"},
+    {"type":"NOR(或非门)"}
+    
+  ],
+  "devices":[
+    {"type":"DC(直流电)","id":"dev0","x":104,"y":80,"label":"DC"},
+    {"type":"DC(直流电)","id":"dev1","x":104,"y":184,"label":"DC"},
+    {"type":"NOR(或非门)","id":"dev2","x":288,"y":80,"label":"NOR"},
+    {"type":"NOR(或非门)","id":"dev3","x":288,"y":184,"label":"NOR"},
+    {"type":"NOR(或非门)","id":"dev4","x":416,"y":136,"label":"NOR"},
+    {"type":"LED","id":"dev5","x":528,"y":136,"label":"LED"},
+    {"type":"Toggle(开关)","id":"dev6","x":192,"y":80,"label":"Toggle","state":{"on":false}},
+    {"type":"Toggle(开关)","id":"dev7","x":200,"y":184,"label":"Toggle","state":{"on":false}}
+  ],
+  "connectors":[
+    {"from":"dev2.in0","to":"dev6.out0"},
+    {"from":"dev2.in1","to":"dev6.out0"},
+    {"from":"dev3.in0","to":"dev7.out0"},
+    {"from":"dev3.in1","to":"dev7.out0"},
+    {"from":"dev4.in0","to":"dev2.out0"},
+    {"from":"dev4.in1","to":"dev3.out0"},
+    {"from":"dev5.in0","to":"dev4.out0"},
+    {"from":"dev6.in0","to":"dev0.out0"},
+    {"from":"dev7.in0","to":"dev1.out0"}
+  ]
+}
+ </div>
+
+<p>想一想,上面这个电路与哪个逻辑电路等效?</p>
+  <div>
+  <div class="pagination">
+    <a href="副本2.html">&laquo;</a>
+    <a href="副本1(SHTU).html" >1</a>
+    <a href="副本2.html">2</a>
+    <a href="副本3(逻辑等效).html"  class="active">3</a>
+    <a href="副本4-震荡电路.html">4</a>
+    
+    
+    <a href="副本4-震荡电路.html">&raquo;</a>
+  </div>
+</div>
+</div>
+<style>
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
+
+
+
+
+
+
+   
+  </body>
+</html>
